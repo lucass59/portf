@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor-principal: #000000;
+    --cor-secundaria: #00BFFF;
+    --cor-tercearia: #ffffff;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-principal);
+    color: var(--cor-tercearia);
+}
+
+.destaqueTitulo {
+    color: var(--cor-secundaria);
+}
+
+.apres{
+    padding: 2.8% 3.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82;
+}
+
+.apres__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.apres__conteudo__titulo{
+    font-size: 2.25rem;
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.apres__conteudo__texto{
+    font-size: 1.12rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.apres__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.apres__linkstexto{
+    font-family: 'Krona One', 'sans-serif';
+    font-weight: 300;
+    font-size: 1.37rem;
+}
+
+.apres__bttlinks{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.69rem;
+    font-weight: 400;
+    border: 2px solid var(--cor-secundaria);
+    color:var(--cor-tercearia);
+    padding: 21px 21px;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+.apres__bttlinks:hover{
+    background-color: #272727;
+}    
+
+.apres__foot{
+    padding: 30px;
+    color: var(--cor-principal);
+    background-color: var(--cor-secundaria);
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.cabeçalho__menu__link{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--cor-principal);
+    text-decoration: none;   
+}
+
+.cabeçalho{
+    background-color: var(--cor-secundaria);
+    text-align: center;
+}
+
+.apres__img{
+    width: 45%;
+}
+
+@media (max-width: 678px){
+
+    .cabeçalho{
+        gap: 0 50%;
+    }
+
+    .apres{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apres__conteudo{
+        width: auto;
+    }
+}
+
